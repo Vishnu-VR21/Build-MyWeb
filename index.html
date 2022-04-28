@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <link rel="short icon" href="images/buildlogo.png" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .center_div1{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parent{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar-brand {
+            padding-top: 0.3125rem;
+            padding-bottom: 0.3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .text-center{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        img{
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .ctr{
+            width: 100%;
+            height: 10%;
+        }
+        .img1{
+            margin-left: 550px;
+            height: 80px;
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: rgb(208, 239, 255);">
+        <div class="container-fluid ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">
+                <img src="buildlogo.png" alt="" width="150" height="64">
+            </a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#mentor">Mentor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#part">Participates</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="slide1.png" class="d-block w-100" alt="img not found">
+          </div>
+          <div class="carousel-item">
+            <img src="slide2.png" class="d-block w-100" alt="img not found">
+          </div>
+          <div class="carousel-item">
+            <img src="slide1.png" class="d-block w-100" alt="img not found">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="parent">
+        <form>
+            <div class="child">
+                <h5>Join us</h5>
+            </div>
+            <div class="child">
+                <p>Pygrammers is a community of python enthusiastic with similar idealogies and interest</p>
+            </div>
+            <a href="https://telegram.me/pygrammers_official">
+            <button type="button" class="btn btn-primary">Telegram</button></a>
+        </form>
+    </div>
+      <div class="center_div1" id="register">
+        <form>
+            <div>
+                <p><b>Form:</b></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mobile Number</label>
+                <input type="number" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Company/Institution Name</label>
+              <input type="password" class="form-control">
+            </div>
+            <div class="mb-3">
+                <div class="form-text">Upload a short video or image of hand written sheet showing your interest to join build.myweb</div>
+                <input type="file">
+            </div>
+            <div class="mb-3">
+                <select class="form-select">
+                    <option selected>Have you attended any events by Pygrammers before ?!</option>
+                    <option>yes</option>
+                    <option>no</option>
+                  </select>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit Form</button>
+          </form>
+        </div>
+        <div class="container center_div" id="mentor">
+            <div class="row">
+                <div>
+                    <p><b>Mentors</b></p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="" width="200" height="200">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="" width="200" height="200">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="" width="200" height="200">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="" width="200" height="200">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="" width="200" height="200">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="" width="200" height="200">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="part" style="width:auto">
+            <h2 style="    display: flex;
+            align-content: center;
+            justify-content: center;">Participants</h2>           
+            <table class="table table-dark">        
+              <tbody >
+                <tr>
+                    <td>Vishnu V R</td>           
+                    <td>Rohan sebastian Jolly</td>
+                </tr>
+                <tr>
+                    <td>Muhammed Raoof</td>          
+                    <td>Muhammed Firoz N</td>
+                </tr>
+                <tr>
+                    <td>Kavya Kusian</td>            
+                    <td>Anaghasree</td>
+                </tr>
+                <tr>
+                    <td>Abhijith C A</td>    
+                    <td>Mary Varghese</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        <footer  style="background-color: rgb(208, 239, 255);">
+            <a href="#">
+                <img class="img1" src="footer.png" alt="">
+            </a>
+        </footer>
+
+</body>
+</html>
